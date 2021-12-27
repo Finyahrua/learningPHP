@@ -1,0 +1,35 @@
+The other php data type include numbers, and they come in two types: integer and float.
+    Integers are used to represent whole numbers, and 
+    Floats are used to represent decimal numbers.
+    Example:
+        $x = 5;//an integer
+        $y = 5.5;//a float
+Some basic operations are performed on numbers include addition, subtraction, multiplication, division, and many other arithmetic operations.
+
+Others include increment and decrement operations, and the modulus operator.
+Example:
+    $age=20;
+    $age++;//$age is now 21 or 
+    $age--;//$age is now 20
+    $age%=2;//$age is now 0, since the modulus operator returns the remainder of the division of the two numbers.
+
+Some built in functions that can be used with numbers include:
+        floor()-rounds down a number to the nearest integer
+            //eg: floor(5.5) = 5
+        ceil()-rounds up a number to the nearest integer
+            //eg: ceil(5.5) = 6
+        round()-rounds a number to the nearest integer
+            //eg: round(5.5) = 6
+        abs()-returns the absolute value of a number
+            //eg: abs(-5) = 5
+        pow()-returns the power of a number
+            //eg: pow(2,3) = 8
+        sqrt()-returns the square root of a number
+            //eg: sqrt(9) = 3
+        max()-returns the highest value of a list of numbers
+            //eg: max(1,2,3,4,5) = 5
+        min()-returns the lowest value of a list of numbers
+            //eg: min(1,2,3,4,5) = 1
+        rand()-returns a random number
+            //eg: rand() = a random number between 0 and 1
+and many others that one can easily find on google.
