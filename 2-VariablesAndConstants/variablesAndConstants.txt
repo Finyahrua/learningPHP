@@ -1,0 +1,18 @@
+variables are used to store data or information.
+this information can be used in the future on other parts of the program,eg having a variable to store the name of the user and then using that variable to display the name of the user.
+
+In php, variables are declared with the $ sign.
+php variables are case sensitive and must start with a letter or an underscore.
+Its common to use camelCase for naming variables.
+
+Example of a variable:
+    $name = "John";
+    $email = "johndoe@gmail.com"
+When using normal variable names in php, The variables can be overridden in later part of the program although this is not a very good idea.
+However, when trying to overide constansts, you will encounter errors saying that the variable has already been defined.
+
+In php, constansts are declared with the define() function.
+constants are case sensitive and must start with a letter or an underscore, its a convection to use uppercase letters for constants.
+Example:
+    define("USERNAME", "John");
+    define("EMAIL", "johndoe@gmail.com");
