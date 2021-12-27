@@ -1,0 +1,52 @@
+String are data types that are used to hold characters.
+String, like any other php variables are declred with the $ sign.
+php string must be enclosed in a single or double quotes.
+Example:
+    $email = "finadrian@example.com";
+    $schoolName = "The Krukas Academy";
+    $firstName = "Fin";
+    $lastName = "Adrian";
+The major operation in php strings is concatenation, that is joining two or more strings together.
+Example:
+    $fullName = $firstName . " " . $lastName;
+    echo $fullName;
+    //output: Fin Adrian
+    $fullName = $firstName . " " . $lastName . " " . $schoolName;
+    echo $fullName;
+    //output: Fin Adrian The Krukas Academy
+    $fullName = $firstName . " " . $lastName . " " . $schoolName . " " . $email;
+    echo $fullName;
+    //output: Fin Adrian The Krukas Academy
+When we want to use variable names immediately within a string of characters, we should use double quotes.
+Example: 
+    <?php 
+        $firstName = "Fin";
+        $lastName = "Adrian";
+        $fullName = "$firstName $lastName";
+        echo $fullName;
+    
+    ?>
+    //output: Fin Adrian
+
+Some common built in functions used with php strings include:
+    strlen() - returns the length of a string
+        //eg:strlen("Fin Adrian")- returns 10
+    strpos() - returns the position of the first occurrence of a substring in a string
+        //eg:strpos("I love php, I love php too!","php");-retuns 7
+    str_replace() - replaces all occurrences of the search string with the replacement string
+        //eg: str_replace('w','x','$variableToPerfomReplaceOn');
+    strtolower() - converts a string to lowercase
+        //eg: strtolower('$varibleWithUpperCaseLetters');
+    strtoupper() - converts a string to uppercase
+        //eg: strtoupper('$varibleWithLowerCaseLetters');
+    trim() - removes whitespace from both sides of a string
+        //eg: trim('$variableWithWhitespace');
+    substr() - returns part of a string
+        //eg: substr('$aStringVariable',0,5);
+    str_repeat() - repeats a string
+        //eg: str_repeat('$aStringVariable',5);
+    str_word_count() - counts the number of words in a string
+        //eg: str_word_count('$aStringVariable');
+    str_split() - splits a string into an array of substrings
+        //eg: str_split('$aStringVariable',5);
+and many more others.
