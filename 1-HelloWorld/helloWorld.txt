@@ -1,0 +1,2 @@
+it is  a custom when learning a new language to start with the basics of outputing hello world in the particular language.
+with me learning php this is no exeption and this is my fist php program.
