@@ -1,0 +1,57 @@
+A php array can be considered as a variable used to hold related data.
+Php arrays are used to store multiple values in one single variable.
+Arrays can be created using the array() function or by using square brackets.
+*they come in two types:
+    1.indexed arrays
+    2.associative arrays
+
+1.indexed array:
+    Indexed arrays are named so because they are ordered and accessed by their index.
+    the indices start from 0 and go to n-1.
+    example of an indexed array is:
+        $cars = array("Volvo", "BMW", "Toyota");//using array() function
+        or $cars=["Volvo", "BMW", "Toyota"];//using square brackets
+
+    To access the value of an indexed array, we use the index number.
+    For example, to access the value of the first element of the array, we use the index number 0,
+    that is if we were to print the "Volvo" value, we would write:
+        echo $cars[0];
+    The second element would be accessed by the index number 1, the third element by the index number 2  and so on.
+    The last element of the array would be accessed by the index number n-1.
+
+2.associative arrays:
+    Associative arrays are used to store multiple values in one single variable.
+    Associative arrays contains its items as key-value pairs.
+    The keys are used to access the values.
+    Associative arrays are accessed by the key name.
+    example of an associative array is:
+        $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");//using array() function
+        or $age=["Peter"=>"35", "Ben"=>"37", "Joe"=>"43"];//using square brackets
+    To access the value of an associative array, we use the key name.
+    For example, to access the value of the key "Peter", we would write:
+        echo $age["Peter"];
+    The value of the key "Ben" would be accessed by the key name "Ben".
+    The value of the key "Joe" would be accessed by the key name "Joe".
+    The last element of the array would be accessed by the key name n-1.
+
+There also exists a third type of array called multidimensional arrays.
+Multidimensional arrays are arrays that contain other arrays,that is the contents of the array can also be arrays.
+For example:
+    $cars = [
+        ["name"=>"Volvo", "model"=>"XC90", "year"=>"2016"],
+        ["name"=>"BMW", "model"=>"X5", "year"=>"2017"],
+        ["name"=>"Toyota", "model"=>"Corolla", "year"=>"2018"]
+    ]
+They are useful when we want to store multiple values in one single variable.
+
+some built in functions that can be used on arrays include:
+    1-count()
+        //counts the number of elements in an array
+        //it can be used on indexed arrays and associative arrays
+    2-sort()
+        //sorts the elements of an array
+        //it can be used on indexed arrays and associative arrays
+    3-array_keys()
+        //returns an array containing all the keys of an array
+        //it can be used on associative arrays
+    4-array_values()
